@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Glasses</title>
+    <link rel="shortcut icon" href="https://img.freepik.com/free-photo/eyeglasses-sunglasses-reflecting-summer-elegance-design-generated-by-ai_188544-19634.jpg?w=826&t=st=1728338925~exp=1728339525~hmac=a02d4f867794c6377d308ea6609a1b1f984583872834af1646ee2e82e0c9aeba" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div id="nav">
+        <p style="font-size: larger;"><b>Eye Glass</b></p>
+        <p>Ai use </p>
+        <p>About</p>
+    </div>
+
+<div class="container">
+    <!-- Controls on the left side -->
+    <div class="controls">
+        <input type="file" id="imageUpload" accept="image/*" style="margin-bottom: 10px;">
+        <button onclick="changeSize('increase')">Increase Size</button>
+        <button onclick="changeSize('decrease')">Decrease Size</button>
+    </div>
+
+    <!-- Image frame in the center -->
+    <div class="frame">
+        <img id="uploadedImage" src="" alt="">
+        <img id="spectaclesImage" class="spectacles" src="" alt="">
+    </div>
+
+    <!-- Controls on the right side -->
+    <div class="controls">
+        <button onclick="moveSpectacles('left')">Move Left</button>
+        <button onclick="moveSpectacles('right')">Move Right</button>
+        <button onclick="moveSpectacles('up')">Move Up</button>
+        <button onclick="moveSpectacles('down')">Move Down</button>
+    </div>
+</div>
+
+<h1 id="h1"><i>Select Glasses</i></h1>
+
+<div class="gallery">
+    <!-- 40 Spectacles images placeholders -->
+    <img src="https://chic-centaur-091535.netlify.app/four-removebg-preview.png" alt="Spectacle 1" onclick="selectSpectacles(this.src)">
+    <img src="https://chic-centaur-091535.netlify.app/one-removebg-preview%20(1).png" alt="Spectacle 2" onclick="selectSpectacles(this.src)">
+    <img src="https://mashood-glass-assigment.netlify.app/download-removebg-preview%20(1).png" alt="Spectacle 3" onclick="selectSpectacles(this.src)">
+    <img src="https://mashood-glass-assigment.netlify.app/images-removebg-preview%20(9).png" alt="Spectacle 4" onclick="selectSpectacles(this.src)"><br>
+    <img src="https://chic-centaur-091535.netlify.app/seventeen-removebg-preview.png" alt="Spectacle 4" onclick="selectSpectacles(this.src)">
+    <img src="https://chic-centaur-091535.netlify.app/fifteen-removebg-preview.png" alt="Spectacle 4" onclick="selectSpectacles(this.src)">
+    <img src="https://chic-centaur-091535.netlify.app/twentyfour-removebg-preview.png" alt="Spectacle 4" onclick="selectSpectacles(this.src)"><br>
+    <img src="https://chic-centaur-091535.netlify.app/file%20(8).png" alt="Spectacle 4" onclick="selectSpectacles(this.src)">
+    <img src="https://chic-centaur-091535.netlify.app/twenty-removebg-preview.png" alt="Spectacle 4" onclick="selectSpectacles(this.src)">
+    <img src="https://chic-centaur-091535.netlify.app/twentyfive-removebg-preview.png" alt="Spectacle 4" onclick="selectSpectacles(this.src)">
+    <img src="https://chic-centaur-091535.netlify.app/twelve-removebg-preview.png" alt="Spectacle 4" onclick="selectSpectacles(this.src)"><br>
+    <img src="https://chic-centaur-091535.netlify.app/twelve-removebg-preview.png" alt="Spectacle 4" onclick="selectSpectacles(this.src)">
+    <img src="https://chic-centaur-091535.netlify.app/file.png" alt="Spectacle 4" onclick="selectSpectacles(this.src)">
+    <img src="https://chic-centaur-091535.netlify.app/five-removebg-preview.png" alt="Spectacle 4" onclick="selectSpectacles(this.src)">
+    <img src="https://chic-centaur-091535.netlify.app/file%20(4).png" alt="Spectacle 4" onclick="selectSpectacles(this.src)">
+    <img src="https://chic-centaur-091535.netlify.app/twentyseven-removebg-preview.png" alt="Spectacle 4" onclick="selectSpectacles(this.src)">
+    
+</div>
+
+
+   
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
